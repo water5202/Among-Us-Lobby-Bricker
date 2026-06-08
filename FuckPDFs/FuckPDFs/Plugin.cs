@@ -18,7 +18,7 @@ namespace FuckPDFs
         {
             Log = base.Log;
             harmony.PatchAll();
-            ClassInjector.RegisterTypeInIl2Cpp<MainClass>(); // register class
+            ClassInjector.RegisterTypeInIl2Cpp<MainClass>();
             AddComponent<MainClass>();
         }
     }
@@ -69,7 +69,7 @@ namespace FuckPDFs
             if (GUILayout.Button("Force Disconnect"))
                 AmongUsClient.Instance.ExitGame(DisconnectReasons.ExitGame);
 
-            GUI.DragWindow(new Rect(0, 0, windowRect.width, 40)); // dragwindow duh
+            GUI.DragWindow(new Rect(0, 0, windowRect.width, 40));
         }
     }
 }
